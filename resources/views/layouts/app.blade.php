@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog Demo | Flowkl</title>
-  <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+  <title>Task | Sondos</title>
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <!-- Fonts -->
   <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" id="nav">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -27,12 +27,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <iron-icon icon="vaadin:pencil"></iron-icon>
+        <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8pr4x-NQnryYxxu6QeHTq0NAWnJ-RRkJLbw&usqp=CAU" 
+        style="height:40px; margin-top:5px;"/>
+          <iron-icon icon="vaadin:pencil"></iron-icon>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li>
-            <a href="{{ url('/') }}">Home</a>
+            <a href="{{ url('/') }}" id="home">Home</a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -90,7 +92,7 @@
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
         <div class="panel panel-default">
-          <div class="panel-heading">
+          <div class="panel-heading" style="background-color:rgb(184, 167, 189);">
             <h2>@yield('title')</h2>
             @yield('title-meta')
           </div>

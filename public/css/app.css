@@ -4,6 +4,13 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+#home{
+  color: black;
+  font-size: 200%;
+}
+#nav{
+  background-color: rgb(184, 167, 189);
+}
 body {
   margin: 0;
 }
@@ -4989,6 +4996,7 @@ a.list-group-item-danger.active:focus {
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+ 
 }
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;

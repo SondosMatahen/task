@@ -51,7 +51,7 @@
     @if(!empty($latest_posts[0]))
     @foreach($latest_posts as $latest_post)
     <p>
-      <strong><a href="{{ url('/'.$latest_post->slug) }}">{{ $latest_post->title }}</a></strong>
+      <strong><a href="{{ url('/'.$latest_post->slug) }}" style="color:rgb(184, 167, 189);">{{ $latest_post->title }}</a></strong>
       <span class="well-sm">On {{ $latest_post->created_at->format('M d,Y \a\t h:i a') }}</span>
     </p>
     @endforeach
@@ -70,7 +70,7 @@
     <div class="list-group-item">
       <p>{{ $latest_comment->body }}</p>
       <p>On {{ $latest_comment->created_at->format('M d,Y \a\t h:i a') }}</p>
-      <p>On post <a href="{{ url('/'.$latest_comment->posts->slug) }}">{{ $latest_comment->posts->title }}</a></p>
+      <p>On post <a href="{{ url('/'.$latest_comment->posts->slug) }}" style="color:rgb(184, 167, 189);">{{ $latest_comment->posts->title }}</a></p>
     </div>
     @endforeach
     @else

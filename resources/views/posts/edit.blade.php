@@ -20,9 +20,9 @@ Edit Post
   <div class="form-group">
     <textarea name='body' class="form-control">
       @if(!old('body'))
-      {!! $post->body !!}
+      {{ $post->body }}
       @endif
-      {!! old('body') !!}
+      {{ old('body') }}    
     </textarea>
   </div>
   @if($post->active == '1')
